@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/share (1).png" type="image/x-icon">
+
+    <title>Data Portfolio • Marcos Vinicius</title>
+</head>
+<body>
+    
+   <div class="container">
+<!-- --------------- HEADER --------------- -->
+<nav id="header">
+    <div class="nav-logo">
+        <p class="nav-name" data-en="Data Portfolio" data-pt="Data Portfólio">Data Portfolio</p>
+        <span></span>
+    </div>
+    <div class="nav-menu" id="myNavMenu">
+        <ul class="nav_menu_list">
+            <li class="nav_list">
+                <a href="#home" class="nav-link active-link" data-en="Home" data-pt="Início">Home</a>
+                <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+                <a href="#about" class="nav-link" data-en="About" data-pt="Sobre">About</a>
+                <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+                <a href="#projects" class="nav-link" data-en="Projects" data-pt="Projetos">Projects</a>
+                <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+                <a href="#contact" class="nav-link" data-en="Contact" data-pt="Contato">Contact</a>
+                <div class="circle"></div>
+            </li>
+        </ul>
+    </div>
+    <div class="nav-menu-btn">
+        <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+    </div>
+    <div class="lang-toggle">
+        <label class="switch" for="lang-toggle">
+            <input type="checkbox" id="lang-toggle" onchange="toggleLanguage()">
+            <span class="slider round"></span>
+        </label>
+    </div>
+</nav>
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- HOME ---------------- -->
+      <section class="featured-box" id="home">
+        <div class="featured-text"> 
+            <div class="featured-text-card">
+                <span data-en="Hi, it's Marcos" data-pt="Olá, sou o Marcos">Hi, it's Marcos</span>
+            </div>     
+            <div class="featured-name">
+                <h1><span data-en="I'm a" data-pt="Eu sou um">I'm a</span> <span class="typedText"></span></h1>
+            </div>          
+            <div class="featured-text-info">
+                <p data-en="Collecting, processing, analyzing, and presenting data to support daily operational decisions and drive global transformations."
+                   data-pt="Coletando, processando, analisando e apresentando dados para apoiar decisões operacionais diárias e impulsionar transformações globais.">
+                   Collecting, processing, analyzing, and presenting data to support daily operational decisions and drive global transformations.
+                </p>
+            </div>
+            <div class="featured-text-btn">
+                <button class="btn blue-btn" data-en="Hire Me" data-pt="Contrate-me">Hire Me</button>
+                <div class="nav-button">
+                    <button class="btn download-btn" onclick="window.open('https://drive.google.com/file/d/1Y8IuVBHJ-RdSBqLyH0bvr9AGGfJ41bqw/view?usp=drive_link', '_blank')">
+                        <span data-en="Download CV" data-pt="Baixar CV">Download CV</span> 
+                        <i class="uil uil-file-alt"></i>
+                    </button>                   
+                </div>               
+            </div>
+            <div class="social_icons">
+                <div class="icon" onclick="window.open('https://www.linkedin.com/in/marcosvmanjos/', '_blank');" aria-label="LinkedIn">
+                    <i class="uil uil-linkedin-alt" style="font-size: 1.4em;"></i>
+                </div>
+                <div class="icon" onclick="window.open('https://github.com/marcos-anjos', '_blank');" aria-label="GitHub">
+                    <i class="uil uil-github-alt" style="font-size: 1.4em;"></i>
+                </div>                
+                <div class="icon" onclick="window.open('https://www.instagram.com/', '_blank');" aria-label="Instagram">
+                    <i class="uil uil-instagram" style="font-size: 1.4em;"></i>
+                </div>
+                <div class="icon" onclick="window.open('https://twitter.com/', '_blank');" aria-label="Twitter">
+                    <i class="uil uil-twitter-alt" style="font-size: 1.4em;"></i>
+                </div>
+            </div>                                   
+        </div>
+
+          <div class="featured-image">
+            <div class="image">
+                <img src="assets/images/profile/Data extraction-rafiki (9).png" alt="avatar">
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+                <i class="uil uil-mouse-alt"></i>
+                <p data-en="Scroll Down" data-pt="Role para baixo">Scroll Down</p>
+            </a>
+          </div>
+
+       </section>
+
+  <!-- -------------- ABOUT ME ---------------- -->
+<style>
+    /* Estilos CSS para justificar os parágrafos */
+    #about p {
+        text-align: justify;
+        margin-bottom: 5px;
+    }
+    /* Adicione outros estilos CSS conforme necessário para melhorar o design */	
+</style>
+
+<section class="section" id="about" style="height: 850px;">
+    <div class="top-header">
+        <h1 data-en="About Me" data-pt="Sobre Mim">About Me</h1>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="about-info">
+                <h3 data-en="My Introduction" data-pt="Minha Introdução">My Introduction</h3>
+                <p data-en="Hello! I'm Marcos Vinicius, a passionate data analyst dedicated to uncovering meaningful insights from complex datasets. My journey in the field began with a deep curiosity about the narratives hidden within data, driving me to develop a robust skill set in data collection, processing, and analysis."
+                   data-pt="Olá! Eu sou Marcos Vinicius, um analista de dados apaixonado por descobrir insights significativos a partir de conjuntos de dados complexos. Minha jornada na área começou com uma profunda curiosidade sobre as narrativas escondidas nos dados, levando-me a desenvolver um conjunto robusto de habilidades em coleta, processamento e análise de dados.">
+                   Hello! I'm Marcos Vinicius, a passionate data analyst dedicated to uncovering meaningful insights from complex datasets. My journey in the field began with a deep curiosity about the narratives hidden within data, driving me to develop a robust skill set in data collection, processing, and analysis.
+                </p>
+                <p data-en="Over the years, I have honed my abilities to identify and gather relevant data from diverse sources, including databases, APIs, and external platforms. My expertise in programming languages such as Python, R, and SQL allows me to efficiently clean, transform, and manipulate data, preparing it for thorough analysis. I am also proficient in creating impactful visualizations using tools like Matplotlib, Seaborn, and various BI tools, which help communicate complex insights clearly and effectively."
+                   data-pt="Ao longo dos anos, aperfeiçoei minhas habilidades para identificar e coletar dados relevantes de diversas fontes, incluindo bancos de dados, APIs e plataformas externas. Minha experiência em linguagens de programação como Python, R e SQL me permite limpar, transformar e manipular dados de forma eficiente, preparando-os para uma análise completa. Também sou proficiente na criação de visualizações impactantes usando ferramentas como Matplotlib, Seaborn e várias ferramentas de BI, que ajudam a comunicar insights complexos de forma clara e eficaz.">
+                   Over the years, I have honed my abilities to identify and gather relevant data from diverse sources, including databases, APIs, and external platforms. My expertise in programming languages such as Python, R, and SQL allows me to efficiently clean, transform, and manipulate data, preparing it for thorough analysis. I am also proficient in creating impactful visualizations using tools like Matplotlib, Seaborn, and various BI tools, which help communicate complex insights clearly and effectively.
+                </p>
+                <p data-en="Committed to continuous learning, I actively seek to expand my knowledge and stay updated with the latest advancements in data science and analytics. I am excited about the opportunity to collaborate on innovative projects and contribute to teams focused on data-driven decision-making and solutions."
+                   data-pt="Comprometido com o aprendizado contínuo, busco ativamente expandir meu conhecimento e manter-me atualizado com os últimos avanços em ciência de dados e análises. Estou animado com a oportunidade de colaborar em projetos inovadores e contribuir para equipes focadas em tomada de decisões e soluções orientadas por dados.">
+                   Committed to continuous learning, I actively seek to expand my knowledge and stay updated with the latest advancements in data science and analytics. I am excited about the opportunity to collaborate on innovative projects and contribute to teams focused on data-driven decision-making and solutions.
+                </p>
+                <div class="about-btn">
+                    <button class="btn download-btn" onclick="window.open('https://drive.google.com/file/d/1Y8IuVBHJ-RdSBqLyH0bvr9AGGfJ41bqw/view?usp=drive_link', '_blank')">
+                        <span data-en="Download CV" data-pt="Baixar CV">Download CV</span> 
+                        <i class="uil uil-file-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="col">
+            <div class="skills-box">
+                <div class="skills-header">
+                    <h3 data-en="Frameworks & Languages" data-pt="Frameworks & Linguagens">Frameworks & Languages</h3>
+                </div>
+                <div class="skills-list">
+                    <span>Python</span>
+                    <span>R</span>
+                    <span>SQL</span>                                           
+                    <span>Pandas</span>
+                    <span>Matplotlib</span>
+                    <span>Numpy</span>
+                    <span>Seaborn</span>
+                    <span>Scikit-Learn</span>
+                    <span>TensorFlow</span>
+                    <span>ggplot2</span>
+                    <span>shiny</span>
+                    <span>PyTorch</span>
+                    <span>Keras</span>
+                </div>
+            </div>
+            <div class="skills-box">
+                <div class="skills-header">
+                    <h3 data-en="Tools" data-pt="Ferramentas">Tools</h3>
+                </div>
+                <div class="skills-list">
+                    <span>Microsoft Excel</span>
+                    <span>Power BI</span>
+                    <span>Tableau</span>
+                    <span>Looker Studio</span>
+                    <span>Visual Studio Code</span>
+                    <span>Anaconda</span> 
+                    <span>Jupyter Notebooks</span>
+                    <span>RStudio</span>
+                    <span>Google Colab</span>                        
+                </div>
+            </div>
+            <div class="skills-box">
+                <div class="skills-header">
+                    <h3 data-en="Database" data-pt="Banco de Dados">Database</h3>
+                </div>
+                <div class="skills-list">
+                    <span>MongoDB</span>
+                    <span>NoSQL</span>
+                    <span>MySQL</span>
+                    <span>PostgreSQL</span>
+                </div>
+            </div>
+            <div class="skills-box">
+                <div class="skills-header">
+                    <h3 data-en="Soft Skills" data-pt="Habilidades Interpessoais">Soft Skills</h3>
+                </div>
+                <div class="skills-list">
+                    <span data-en="Communication" data-pt="Comunicação">Communication</span>
+                    <span data-en="Problem-Solving" data-pt="Resolver Problemas">Problem-Solving</span>
+                    <span data-en="Teamwork" data-pt="Trabalho em Equipe">Teamwork</span>
+                    <span data-en="Leadership" data-pt="Liderança">Leadership</span>
+                    <span data-en="Time Management" data-pt="Gestão de Tempo">Time Management</span>
+                    <span data-en="Critical Thinking" data-pt="Pensamento Crítico">Critical Thinking</span>
+                    <span data-en="Adaptability" data-pt="Adaptabilidade">Adaptability</span>
+                </div>              
+            </div>
+        </div> 
+    </div>
+</section>
+
+
+<!-- -------------- PORTFOLIO ---------------- -->
+
+<section class="section" id="projects">
+    <div class="top-header">
+        <h1 data-en="Data Portfolio" data-pt="Portfólio de Dados">Data Portfolio</h1>
+        <span data-en="A showcase of my top data analysis projects." data-pt="Uma vitrine dos meus principais projetos de análise de dados.">A showcase of my top data analysis projects.</span> </br>
+    </div>
+
+    <!-- Filter buttons -->
+    <div class="project-filter">
+        <button class="filter-btn active-filter" data-filter="all">
+            <i class="uil uil-globe"></i> <span data-en="All" data-pt="Todos">All</span>
+        </button>
+        <button class="filter-btn" data-filter="python">
+            <i class="uil uil-arrow"></i> <span data-en="Python" data-pt="Python">Python</span>
+        </button>
+        <button class="filter-btn" data-filter="sql">
+            <i class="uil uil-database"></i> <span data-en="SQL" data-pt="SQL">SQL</span>
+        </button>
+        <button class="filter-btn" data-filter="r">
+            <i class="uil uil-chart-bar"></i> <span data-en="R" data-pt="R">R</span>
+        </button>
+        <button class="filter-btn" data-filter="tableau">
+            <i class="uil uil-chart-pie"></i> <span data-en="Tableau" data-pt="Tableau">Tableau</span>
+        </button>
+        <button class="filter-btn" data-filter="excel">
+            <i class="uil uil-file-alt"></i> <span data-en="Excel" data-pt="Excel">Excel</span>
+        </button>
+        <button class="filter-btn" data-filter="ml">
+            <i class="uil uil-robot"></i> <span data-en="Machine Learning" data-pt="Machine Learning">Machine Learning</span>
+        </button>
+        <button class="filter-btn" data-filter="api">
+            <i class="uil uil-folder-network"></i> <span data-en="API" data-pt="API">API</span>
+        </button>
+        <button class="filter-btn" data-filter="micro-projects">
+            <i class="uil uil-layer-group"></i> <span data-en="Micro Projects" data-pt="Micro Projetos">Micro Projects</span>
+        </button>
+    </div>
+
+    <!-- Container de projetos -->
+    <div class="project-container">
+        <!-- Projeto 1 -->
+        <div class="project-box sql">
+            <a href="https://github.com/marcos-anjos/IMDB-Website-Scraper" target="_blank">
+                <div class="project-image">
+                    <img src="assets/images/portfolio/img-1.jpg">                  
+                </div>
+            </a>
+            <div class="project-info">
+                <h4 data-en="Data Analysis with SQL" data-pt="Análise de Dados com SQL">Análise de Dados com SQL</h4>
+                <p data-en="Data analysis, SQL queries, reports, visualizations" data-pt="Análise de dados, consultas SQL, relatórios, visualizações">Análise de dados, consultas SQL, relatórios, visualizações</p>
+            </div>
+        </div>
+        <!-- Projeto 2 -->
+        <div class="project-box sql">
+            <a href="https://github.com/marcos-anjos/IMDB-Website-Scraper" target="_blank">
+                <div class="project-image">
+                    <img src="assets/images/portfolio/img-2.jpg">                  
+                </div>
+            </a>
+            <div class="project-info">
+                <h4 data-en="Data Analysis with SQL" data-pt="Análise de Dados com SQL">Análise de Dados com SQL</h4>
+                <p data-en="Data analysis, SQL queries, reports, visualizations" data-pt="Análise de dados, consultas SQL, relatórios, visualizações">Análise de dados, consultas SQL, relatórios, visualizações</p>
+            </div>
+        </div>
+        <!-- Projeto 3 -->
+        <div class="project-box ml">
+            <a href="https://github.com/marcos-anjos/IMDB-Website-Scraper" target="_blank">
+                <div class="project-image">
+                    <img src="assets/images/portfolio/img-3.jpg">                  
+                </div>
+            </a>
+            <div class="project-info">
+                <h4 data-en="Machine Learning Models" data-pt="Modelos de Machine Learning">Modelos de Machine Learning</h4>
+                <p data-en="Data analysis, machine learning, prediction, models" data-pt="Análise de dados, machine learning, previsão, modelos">Análise de dados, machine learning, previsão, modelos</p>
+            </div>
+        </div>
+        <!-- Projeto 4 -->
+        <div class="project-box python">
+            <a href="https://github.com/marcos-anjos/IMDB-Website-Scraper" target="_blank">
+                <div class="project-image">
+                    <img src="assets/images/portfolio/img-7.jpg">                  
+                </div>
+            </a>
+            <div class="project-info">
+                <h4 data-en="Data Analysis with Python" data-pt="Análise de Dados com Python">Análise de Dados com Python</h4>
+                <p data-en="Data analysis, Python language, visualization, manipulation" data-pt="Análise de dados, linguagem Python, visualização, manipulação">Análise de dados, linguagem Python, visualização, manipulação</p>
+            </div>
+        </div>
+        <!-- Projeto 5 -->
+        <div class="project-box python">
+            <a href="https://github.com/marcos-anjos/IMDB-Website-Scraper" target="_blank">
+                <div class="project-image">
+                    <img src="assets/images/portfolio/img-5.jpg">                  
+                </div>
+            </a>
+            <div class="project-info">
+                <h4 data-en="Data Analysis with Python" data-pt="Análise de Dados com Python">Análise de Dados com Python</h4>
+                <p data-en="Data analysis, Python language, visualization, manipulation" data-pt="Análise de dados, linguagem Python, visualização, manipulação">Análise de dados, linguagem Python, visualização, manipulação</p>
+            </div>
+        </div>
+        <!-- Projeto 6 -->
+        <div class="project-box api">
+            <a href="https://github.com/marcos-anjos/IMDB-Website-Scraper" target="_blank">
+                <div class="project-image">
+                    <img src="assets/images/portfolio/img-9.jpg">                  
+                </div>
+            </a>
+            <div class="project-info">
+                <h4 data-en="API Integration" data-pt="Integração de APIs">Integração de APIs</h4>
+                <p data-en="Data analysis, integration, API, queries" data-pt="Análise de dados, integração, API, consultas">Análise de dados, integração, API, consultas</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+           
+<!-- -------------- CONTACT ---------------- -->
+<section class="section" id="contact">
+    <div class="top-header">
+        <h1 data-en="Contact Me" data-pt="Contate-Me">Contact Me</h1>
+        <span data-en="Let me help you make the most out of your data." data-pt="Deixe-me ajudá-lo a tirar o máximo proveito dos seus dados.">Let me help you make the most out of your data.</span>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="contact-info">
+                <h2 data-en="Find Me" data-pt="Encontre-me">Find Me <i class="uil uil-corner-right-down"></i></h2>
+                <p><i class="uil uil-envelope-alt"></i> <span data-en="Email" data-pt="Email">Email</span></p>
+                <p><i class="uil uil-telegram-alt"></i> <span data-en="Telegram" data-pt="Telegram">Telegram</span></p>
+                <p><i class="uil uil-discord"></i> <span data-en="Discord" data-pt="Discord">Discord</span></p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-control">
+                <div class="form-inputs">
+                    <input type="text" class="input-field" placeholder="Name" data-en="Name" data-pt="Nome">
+                    <input type="text" class="input-field" placeholder="Email" data-en="Email" data-pt="Email">
+                </div>
+                <div class="text-area">
+                    <textarea placeholder="Message" data-en="Message" data-pt="Mensagem"></textarea>
+                </div>
+                <div class="form-button">
+                    <button class="btn">
+                        <span data-en="Send" data-pt="Enviar">Send</span> <i class="uil uil-message"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- --------------- FOOTER --------------- -->
+<footer>       
+    <div class="middle-footer">
+        <ul class="footer-menu">
+            <li class="footer_menu_list">
+                <a href="#home" data-en="Home" data-pt="Início">Home</a>
+            </li>
+            <li class="footer_menu_list">
+                <a href="#about" data-en="About" data-pt="Sobre">About</a>
+            </li>
+            <li class="footer_menu_list">
+                <a href="#projects" data-en="Projects" data-pt="Projetos">Projects</a>
+            </li>
+            <li class="footer_menu_list">
+                <a href="#contact" data-en="Contact" data-pt="Contato">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer-social-icons">
+        <div class="icon" onclick="window.open('https://www.linkedin.com/in/marcosvmanjos/', '_blank');" aria-label="LinkedIn">
+            <i class="uil uil-linkedin-alt" style="font-size: 1.5em;"></i>
+        </div>
+        <div class="icon" onclick="window.open('https://github.com/marcos-anjos', '_blank');" aria-label="GitHub">
+            <i class="uil uil-github-alt" style="font-size: 1.5em;"></i>
+        </div>                
+        <div class="icon" onclick="window.open('https://www.instagram.com/', '_blank');" aria-label="Instagram">
+            <i class="uil uil-instagram" style="font-size: 1.5em;"></i>
+        </div>
+        <div class="icon" onclick="window.open('https://twitter.com/', '_blank');" aria-label="Twitter">
+            <i class="uil uil-twitter-alt" style="font-size: 1.5em;"></i>
+        </div>
+    </div>
+    <div class="bottom-footer">
+        <p>Copyright &copy; 2024 <a href="#home" style="text-decoration: none;">| <span data-en="Portfolio • Marcos Vinicius" data-pt="Portfólio • Marcos Vinicius">Portfolio • Marcos Vinicius</span></a></p>
+    </div>        
+</footer>
+
+
+<!-- ----- TYPING JS Link ----- -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<!-- ----- SCROLL REVEAL JS Link----- -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- ----- MAIN JS ----- -->
+<script src="assets/js/main.js"></script>
+<!-- Add this code within <script> tags -->
+</body>
+</html>
+
