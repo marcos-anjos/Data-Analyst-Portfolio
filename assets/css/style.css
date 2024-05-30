@@ -378,7 +378,7 @@ h3{
 }
 
 .skills-list span:hover {
-    transform: translateY(-3px); /* Move o elemento para cima e aumenta o tamanho */
+    transform: translateY(-4px); /* Move o elemento para cima e aumenta o tamanho */
 }
 
 
@@ -408,7 +408,7 @@ h3{
 /* Estilos para a imagem do projeto */
 .project-image img {
     max-width: 100%;
-    max-height: 250px;
+    min-height: auto;
     object-fit: cover; /* Ajusta a imagem para cobrir todo o espaço disponível */
     border-radius: 10px 10px 10px 10px; /* Border radius apenas para os cantos superiores */
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4); /* Adiciona o efeito box-shadow apenas nas imagens */
